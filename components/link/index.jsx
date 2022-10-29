@@ -6,7 +6,7 @@ function Link({ id, href, children }) {
     <a
       id={id}
       href={href}
-      className={styles.container}
+      className={styles.link}
       target="_blank"
       rel="noopener noreferrer"
     >
