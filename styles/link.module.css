@@ -1,0 +1,17 @@
+.link {
+  background-color: var(--link-bg);
+  color: var(--link-color);
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: grid;
+  place-items: center;
+  padding: 20px 32px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+  text-transform: capitalize;
+}
+
+.link:hover {
+  background-color: var(--link-dark-bg);
+}
