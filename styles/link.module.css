@@ -9,6 +9,7 @@
   padding: 20px 32px;
   border-radius: 8px;
   transition: background-color 0.2s ease-in-out;
+  text-transform: capitalize;
 }
 
 .link:hover {

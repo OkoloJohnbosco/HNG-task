@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "../components/link";
+import Link, { links } from "../components/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,9 +11,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Link id="dd" href="#odod">
-          Boy
-        </Link>
+        <div className={styles.main_link}>
+          {links.map((link) => (
+            <Link id={link.id} key={link.id} href={link.href}>
+              {link.subText}
+            </Link>
+          ))}
+        </div>
       </main>
     </div>
   );
