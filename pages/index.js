@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/footer";
 import Link, { links } from "../components/link";
 import styles from "../styles/Home.module.css";
 
@@ -19,6 +20,8 @@ export default function Home() {
           ))}
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }
