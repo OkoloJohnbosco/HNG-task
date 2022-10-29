@@ -24,6 +24,16 @@
   margin-left: auto;
 }
 
-.footer_ingre img {
-  text-align: right;
+@media (max-width: 668px) {
+  .footer {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .footer p {
+    text-align: left;
+  }
+  .footer_ingre {
+    margin-left: 0;
+    text-align: left;
+  }
 }
