@@ -1,6 +1,8 @@
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -8,6 +10,7 @@
   max-width: 1200px;
   margin: 0 auto;
   width: 95%;
+  flex: 1;
 }
 
 .main_link {
