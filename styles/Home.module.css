@@ -17,3 +17,24 @@
   display: grid;
   row-gap: 24px;
 }
+
+.main_profile {
+  display: grid;
+  place-items: center;
+  padding-bottom: 10px;
+}
+
+.main_profile > div {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: teal;
+  cursor: pointer;
+}
+.main_profile p:first-of-type {
+  font-weight: bold;
+}
+
+.main_profile p:last-of-type {
+  display: none;
+}
