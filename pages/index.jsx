@@ -18,6 +18,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.main_profile}>
+          <button className={styles.main_profile_menu}>
+            <AiOutlineCamera color="white" fontSize="24px" fontWeight="bold" />
+          </button>
           <div tabIndex={1}>
             <Image src={ingreImg} alt="" id="profile__img" />
             <div>
