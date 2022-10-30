@@ -3,7 +3,7 @@
   color: var(--link-color);
   width: 100%;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   display: grid;
   place-items: center;
   padding: 20px 32px;

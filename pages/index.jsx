@@ -29,7 +29,7 @@ export default function Home() {
             <div>
               <AiOutlineCamera
                 color="white"
-                fontSize="30px"
+                fontSize="24px"
                 fontWeight="bold"
               />
             </div>
