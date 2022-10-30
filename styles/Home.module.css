@@ -65,9 +65,20 @@
 }
 
 .main_profile p:first-of-type {
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .main_profile p:last-of-type {
   display: none;
+}
+.main_last {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main_last a {
+  margin-right: 10px;
 }

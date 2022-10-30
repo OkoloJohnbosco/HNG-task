@@ -3,6 +3,8 @@ import Footer from "../components/footer";
 import Link, { links } from "../components/link";
 import styles from "../styles/Home.module.css";
 import ingreImg from "../public/images/profile.jpg";
+import slackImg from "../public/images/slack.svg";
+import gitImg from "../public/images/git.svg";
 import Image from "next/image";
 import { AiOutlineCamera } from "react-icons/ai";
 
@@ -17,7 +19,7 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.main_profile}>
           <div tabIndex={1}>
-            <Image src={ingreImg} alt="" />
+            <Image src={ingreImg} alt="" id="profile__img" />
             <div>
               <AiOutlineCamera
                 color="white"
@@ -36,6 +38,17 @@ export default function Home() {
               {link.subText}
             </Link>
           ))}
+        </div>
+        <div className={styles.main_last}>
+          <a>
+            <Image src={slackImg} alt="slack image" />
+          </a>
+          <a
+            href="https://github.com/OkoloJohnbosco/HNG-task-1"
+            target="_blank"
+          >
+            <Image src={gitImg} alt="slack image" />
+          </a>
         </div>
       </main>
 
