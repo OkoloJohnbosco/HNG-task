@@ -4,6 +4,7 @@ import Link, { links } from "../components/link";
 import styles from "../styles/Home.module.css";
 import ingreImg from "../public/images/profile.jpg";
 import Image from "next/image";
+import { AiOutlineCamera } from "react-icons/ai";
 
 export default function Home() {
   return (
@@ -15,9 +16,17 @@ export default function Home() {
 
       <main className={styles.main}>
         <section className={styles.main_profile}>
-          <div>
+          <div tabIndex={1}>
             <Image src={ingreImg} alt="" />
+            <div>
+              <AiOutlineCamera
+                color="white"
+                fontSize="30px"
+                fontWeight="bold"
+              />
+            </div>
           </div>
+
           <p id="twitter">Okolo Johnbosco</p>
           <p id="slack">Okolo Johnbosco</p>
         </section>

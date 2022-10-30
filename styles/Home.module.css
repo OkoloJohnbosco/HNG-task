@@ -34,23 +34,32 @@
   position: relative;
 }
 
-.main_profile > div::after {
+.main_profile > div:focus,
+.main_profile > div:focus-within,
+.main_profile > div:focus-visible {
+  outline: 6px solid rgba(235, 233, 254, 1);
+}
+.main_profile > div > div {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  display: block;
-  content: "";
-  background-color: rgba(0, 0, 0, 0.8);
+  display: grid;
+  place-items: center;
+  background-color: rgba(52, 64, 84, 0.75);
   opacity: 0;
   transition: all 0.25s ease-in;
 }
 
-.main_profile > div:hover::after {
-  opacity: 0.6;
+.main_profile > div:hover > div {
+  opacity: 1;
 }
 
+.main_profile > div > div > svg {
+  z-index: 2;
+  margin-top: 70px;
+}
 .main_profile > div img {
   object-fit: contain;
 }
