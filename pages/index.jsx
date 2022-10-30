@@ -7,6 +7,8 @@ import slackImg from "../public/images/slack.svg";
 import gitImg from "../public/images/git.svg";
 import Image from "next/image";
 import { AiOutlineCamera } from "react-icons/ai";
+import { IoMdShareAlt } from "react-icons/io";
+import { BsThreeDots } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -19,7 +21,8 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.main_profile}>
           <button className={styles.main_profile_menu}>
-            <AiOutlineCamera color="white" fontSize="24px" fontWeight="bold" />
+            <IoMdShareAlt fontSize="24px" fontWeight="bold" />
+            <BsThreeDots fontSize="24px" fontWeight="bold" />
           </button>
           <div tabIndex={1}>
             <Image src={ingreImg} alt="" id="profile__img" />
