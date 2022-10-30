@@ -6,8 +6,9 @@
 }
 
 .main {
-  padding: 5rem 0;
-  max-width: 1200px;
+  padding: 3rem 0;
+  padding-bottom: 5rem;
+  max-width: 1000px;
   margin: 0 auto;
   width: 95%;
   flex: 1;
@@ -25,12 +26,35 @@
 }
 
 .main_profile > div {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 100%;
-  background-color: teal;
   cursor: pointer;
+  overflow: hidden;
+  position: relative;
 }
+
+.main_profile > div::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.main_profile > div:hover::after {
+  opacity: 0.6;
+}
+
+.main_profile > div img {
+  object-fit: contain;
+}
+
 .main_profile p:first-of-type {
   font-weight: bold;
 }

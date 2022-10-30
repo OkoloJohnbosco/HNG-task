@@ -2,7 +2,7 @@ import Head from "next/head";
 import Footer from "../components/footer";
 import Link, { links } from "../components/link";
 import styles from "../styles/Home.module.css";
-import ingreImg from "../public/images/ingre.svg";
+import ingreImg from "../public/images/profile.jpg";
 import Image from "next/image";
 
 export default function Home() {
